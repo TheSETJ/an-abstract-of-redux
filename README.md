@@ -88,5 +88,6 @@ this.props.dispatch({ type: 'ANY_ACTION_TYPE', /* pass required info, if any */ 
 ## [Useful Resources](#useful-resources)
 - https://redux.js.org/
 - https://github.com/reduxjs/redux
+- https://github.com/reduxjs/react-redux
 - https://www.youtube.com/watch?v=sX3KeP7v7Kg
 - https://www.youtube.com/watch?v=93p3LxR9xfM
