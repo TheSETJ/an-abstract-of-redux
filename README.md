@@ -53,7 +53,7 @@ const store = createStore(/* reducer */);
 3. Provide app with store:
 ```jsx
 <Provider store={store}>
-  /* app components */
+  <!-- app components -->
 </Provider>
 ```
 4. Connect components to redux and provide connector with a state-to-props-mapper:
