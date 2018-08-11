@@ -16,8 +16,10 @@ This document is a very simple abstract of Redux which written based on the offi
 **Actions** are the only source of information for the Store. They are JavaScript object:
 ```javascript
 {
-  type: it's a string and is required
-  payload: the information
+  // it's a string and is required
+  type: 'ANY_ACTION_TYPE',
+  // the information and is optional
+  payload: {}
 }
 ```
 Action should be dispatched using `dispatch()`.
@@ -35,7 +37,7 @@ Reducers can be separated if they are independent and can be merged using `combi
 
 1. Create your initial state and reducer(s):
 ```javascript
-const initialState = { /* whatever */ }
+const initialState = { /* initial values */ }
 const anyReducer = (state = initialState, action) => {
   switch(action.type) {
     /* cases */
@@ -64,7 +66,7 @@ const anyMapStateToProps = (state) => {
 ```
 5. Dispatch actions whenever needed:
 ```javascript
-/* anywhere need a change of state */
+/* anywhere that needs a change of state */
 this.props.dispatch({ type: 'ANY_ACTION_TYPE', /* pass required info, if any */ })
 ```
 
